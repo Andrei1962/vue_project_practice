@@ -1,31 +1,28 @@
 <template>
-  <div class="container">
+  <div class="home">
     <HeaderMain/>
-    <BaseActionIcon add/>
     <CardsMain/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HeaderMain from '@/components/blocks/HeaderMain'
-import CardsMain from '@/components/blocks/CardsMain'
-import BaseActionIcon from '@/components/icons/BaseActionIcon'
+import HeaderMain from '@/components/blocks/HeaderMain.vue'
+import CardsMain from '@/components/blocks/CardsMain.vue'
 
 export default {
-  name: 'MainPage',
+  name: 'HomeView',
   components: {
     HeaderMain,
-    CardsMain,
-    BaseActionIcon
+    CardsMain
+  },
+  setup () {
   }
 }
 </script>
-
-<style lang="css" scoped>
-.container {
-  widht: 1440px;
-  height: 100vh;
+<style lang="scss" scoped>
+.home {
+  max-width: 1440px;
   background-color: #161516;
 }
 

@@ -42,10 +42,9 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .button__icon-event, .even {
   position: relative;
-  display: inline-block;
   display: flex;
   jusify-content: center;
   align-items: center;

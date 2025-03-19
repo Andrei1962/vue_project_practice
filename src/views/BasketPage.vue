@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <BaseActionIcon/>
-    </div>
+    <h1 class="bufer">BasketPage</h1>
+  </div>
 </template>
 
 <script>
@@ -16,11 +17,15 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .container {
   widht: 1440px;
   height: 1379px;
   background-color: #161516;
+
+  .bufer {
+  color: #ffffff;
+  }
 }
 
 </style>

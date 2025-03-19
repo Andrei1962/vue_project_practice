@@ -1,16 +1,14 @@
 <template>
-  <main class="main">
-    <div class="list">
-      <CardProduct
-        v-for="(item, i) in dataBooks"
-        :key="i"
-        :title="item.name"
-        :subtitle="item.description"
-        :price="item.cost"
-        :srcImg="item.image"
-      />
-    </div>
-  </main>
+  <div class="list">
+    <CardProduct
+      v-for="(item, i) in dataBooks"
+      :key="i"
+      :title="item.name"
+      :subtitle="item.description"
+      :srcImg="item.image"
+      :price="item.cost"
+    />
+  </div>
 </template>
 
 <script>
@@ -35,7 +33,7 @@ export default {
       {
         name: 'Свиные ребрышки на гриле с зеленью',
         description: 'Не следует, однако забывать, что реализация намеченных плановых',
-        cost: '1600₽',
+        cost: '1 600 ₽',
         image: require('@/assets/images/2.png')
       },
       {
@@ -84,22 +82,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.main {
-  list-height: calc(100vh - 240px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #161516;
-  background-size: 100vh;
-  margin-top: 30px;
-}
 
 .list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 35px;
+  gap: 35px 20px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 70px;
 }
 
 </style>
